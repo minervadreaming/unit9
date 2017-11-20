@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Unit 9 Problem 1</title>
+	</head>
+
+	<body>
+
+    <p>
+        <span>
+            <strong>We</strong>
+             have just started 
+            <strong>this</strong>
+             section for the users (
+            <strong>beginner</strong>
+             to intermediate) who want to work with 
+            <strong>various</strong>
+             JavaScript
+            <strong>problems</strong>
+             and write scripts online to 
+            <strong>test</strong>
+             their JavaScript 
+            <strong>skill</strong>
+        </span>
+    </p>
+    <script>
+        var boldItems = document.getElementsByTagName('strong');
+        var i;
+
+        function highlight() {
+            this.style.color = "red";
+        }
+
+        function unhighlight() {
+            this.style.color = "";
+        }
+
+        for (i=0; i<boldItems.length; i++) {
+            boldItems[i].addEventListener('mouseover', highlight, false);
+            boldItems[i].addEventListener('mouseout', unhighlight, false);
+        }
+    </script>
+	</body>
+</html>
+
